@@ -7,8 +7,8 @@ var NaN = "hi";
 isNaN( NaN );
 document.writeln( isNaN( NaN ) );
 
-var empty_object = {};
+var emptyObject = {};
 var stooge = {
     "first-name": "Jerome",
-    "last-name": "Howard"
+    lastName: "Howard"
 }
