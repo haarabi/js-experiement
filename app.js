@@ -12,3 +12,12 @@ var stooge = {
     "first-name": "Jerome",
     lastName: "Howard"
 }
+
+var a = 42;
+
+a = a + 2;
+
+b = String(a);
+
+console.log(a);
+console.log(b);
