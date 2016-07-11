@@ -18,7 +18,6 @@ var stooge = {
     lastName: "Howard"
 }
 
-<<<<<<< HEAD
 var a = 42;
 
 a = a + 2;
@@ -27,7 +26,6 @@ b = String(a);
 
 console.log(a);
 console.log(b);
-=======
 
 // Comments should say why or how rather than what.
 
@@ -67,4 +65,3 @@ if ( balance - amount >= 0 ) {
 } else {
     console.log( "No you cannot purchase!" );
 }
->>>>>>> 73755e1f05eff5ef99ff0e42e130ea26f654c7d6
