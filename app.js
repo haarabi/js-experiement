@@ -40,3 +40,34 @@ try {
     console.log( e.name );
     console.log( e.message );
 }
+
+var arr = [];
+
+i = 1000000000
+while (i--) {
+    arr.push(i);
+}
+
+var start = new Date().getMilliseconds();
+
+// faster
+var j = arr.length;
+for ( var i = 0;  i < j; i++) {
+    //your code
+}
+
+var end = new Date().getMilliseconds();
+
+console.log("first: " + (end-start));
+
+start = new Date().getMilliseconds();
+
+// yet faster
+j = arr.length;
+while (j--) {
+
+}
+
+end = new Date().getMilliseconds();
+
+console.log("first: " + (end-start));
