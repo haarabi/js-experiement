@@ -41,33 +41,49 @@ try {
     console.log( e.message );
 }
 
-var arr = [];
 
-i = 1000000000
-while (i--) {
-    arr.push(i);
+compareLoops = function () {
+    var arr = [];
+
+    var i = 100000000
+    while (i--) {
+        arr.push(i);
+    }
+
+    var start = Date.now();
+    // regular
+    for ( var i = 0;  i < arr.length; i++) {
+        //your code
+    }
+    var end = Date.now();
+    console.log("regular for: " + (end - start));
+
+
+
+    start = Date.now();
+    // faster
+    var j = arr.length;
+    for ( var i = 0;  i < j; i++) {
+        //your code
+    }
+    end = Date.now();
+    console.log("enhanced for: " + (end - start));
+
+
+
+    start = Date.now();
+    // yet faster
+    j = arr.length;
+    while (j--) {
+
+    }
+    end = Date.now();
+    console.log("using while: " + (end - start));
+
+    console.log("--------------");
+};
+
+var x = 5;
+while  (x--) {
+    compareLoops();
 }
-
-var start = new Date().getMilliseconds();
-
-// faster
-var j = arr.length;
-for ( var i = 0;  i < j; i++) {
-    //your code
-}
-
-var end = new Date().getMilliseconds();
-
-console.log("first: " + (end-start));
-
-start = new Date().getMilliseconds();
-
-// yet faster
-j = arr.length;
-while (j--) {
-
-}
-
-end = new Date().getMilliseconds();
-
-console.log("first: " + (end-start));
