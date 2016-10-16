@@ -50,13 +50,13 @@ compareLoops = function () {
         arr.push(i);
     }
 
-    var start = Date.now();
+    var startTime = performance.now();
     // regular
     for ( var i = 0;  i < arr.length; i++) {
         //your code
     }
-    var end = Date.now();
-    console.log("regular for: " + (end - start));
+    var endTime = performance.now();
+    console.log("regular for: " + (endTime - startTime) + " milliseconds");
 
 
 
